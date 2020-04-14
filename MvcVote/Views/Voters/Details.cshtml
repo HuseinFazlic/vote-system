@@ -1,0 +1,48 @@
+﻿@model MvcVote.Models.Voter
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalji / Детаљи</h2>
+
+<div>
+    <h4>Birač / Бирач</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Municipality)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Municipality)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.didVote)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.didVote)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Uredi / Уреди</a> |
+    <a asp-action="Index">Nazad / Назад</a>
+</div>
