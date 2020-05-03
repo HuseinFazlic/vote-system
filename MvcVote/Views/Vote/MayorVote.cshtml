@@ -1,0 +1,86 @@
+﻿<!-- Made by Husein Fazlić -->
+
+@model IEnumerable<MvcVote.Models.Mayor>
+@{
+    ViewData["Title"] = "Načelnik";
+}
+<div class="container">
+    <div style="background-color:lightgray; opacity:0.7;">
+        <h2 style="color:black;">LOKALNI IZBORI / ЛОКАЛНИ ИЗБОРИ</h2>
+        <br />
+        <h2 style="color:black;">ILIDŽA / ИЛИЏА</h2>
+    </div>
+    <br />
+    <h4>Uputstvo za glasanje: Odaberite samo jednog kandidata i pritisnite "Potvrdi"</h4>
+    <h4>Упутство за гласање: Одаберите само једног кандидата и притисните "Потврди"</h4>
+    <br />
+    @if (Model != null)
+    {
+        <form asp-controller="Vote" asp-action="MayorVote" method="post">
+            @foreach (var item in Model)
+            {
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="radio" id="@item.Id" name="mayorVote" value="@item.Id" checked/>
+                    <label class="custom-control-label" for="@item.Id">@Html.DisplayFor(model => item.Name)-@Html.DisplayFor(model => item.Surname)-@Html.DisplayFor(model => item.Party)</label>
+                </div>
+            }
+            <br />
+            <button type="submit" class="btn btn-primary">Potvrdi / Потврди</button>
+        </form>
+    }
+</div>
+
+
+
+
+
+
+
+
+
+<!---
+    /*
+    <form asp-controller="Vote" asp-action="MayorVote" method="post">
+            <table class="table-borderless">
+                foreach (var item in Model)
+                {
+                    <label for="item.Id">
+                        <tr>
+                            <td><input type="radio" id="item.Id" name="mayorVote" value="item.Id"></td>
+                            <td>item.Name</td>
+                            <td align="left">-</td>
+                            <td>item.Surname</td>
+                            <td align="left">-</td>
+                            <td>item.Party</td>
+                        </tr>
+                    </label>
+                }
+            </table>
+    <div class="container">
+        <div style="background-color:lightgray; opacity:0.7;">
+            <h2 style="color:black;">LOKALNI IZBORI / ЛОКАЛНИ ИЗБОРИ</h2>
+            <br />
+            <h2 style="color:black;">ILIDŽA / ИЛИЏА</h2>
+        </div>
+        <br />
+        <h4>Uputstvo za glasanje: Odaberite samo jednog kandidata i pritisnite "Potvrdi"</h4>
+        <h4>Упутство за гласање: Одаберите само једног кандидата и притисните "Потврди"</h4>
+        <br />
+        if (Model != null)
+        {
+            <form asp-controller="Vote" asp-action="MayorVote" method="post">
+                foreach (var item in Model)
+                {
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="radio" id="item.Id" name="mayorVote" value="item.Id"/>
+                        <label class="custom-control-label" for="item.Id">Html.DisplayFor(modelItem => item.Name)-Html.DisplayFor(modelItem => item.Surname)-Html.DisplayFor(modelItem => item.Party)</label>
+                    </div>
+                    <br />
+                }
+                <button type="submit" class="btn btn-primary">Potvrdi / Потврди</button>
+            </form>
+        }
+        <br />
+        <br />
+        <!--<a asp-action="Vijeće"><button class="btn btn-primary btn-lg">Vijećnici / Вијећници -></button></a>-->
+<!---</div>-->

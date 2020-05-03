@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MvcVote.Models.Councillor>
+@{
+    ViewData["Title"] = "Vijeće";
+}
+
+<div class="container">
+    <div style="background-color:lightgray; opacity:0.7;">
+        <h2 style="color:black;">LOKALNI IZBORI / ЛОКАЛНИ ИЗБОРИ</h2>
+        <br />
+        <h2 style="color:black;">ILIDŽA / ИЛИЏА</h2>
+    </div>
+    <!--Ovdje treba dovršiti view i controller
+    <br />
+    <h4>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <span>
+                    <input id="@Html.DisplayNameFor(model => model.Id)" name="@Html.DisplayNameFor(model => model.Id)" type="checkbox" value="false" />
+                    @Html.DisplayFor(modelItem => item.Name) - @Html.DisplayFor(modelItem => item.Surname) - @Html.DisplayFor(modelItem => item.Party)
+                </span>
+                <br />
+            }
+        }   
+    -->
+    <a asp-action="Načelnik"><button class="btn btn-primary btn-lg">Načelnik / Начелник -></button></a>
+</div>

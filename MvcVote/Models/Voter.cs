@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+/*
+ * This class was written by Husein Fazlić
+ */
 namespace MvcVote.Models
 {
     public class Voter
@@ -15,7 +17,7 @@ namespace MvcVote.Models
         [Display(Name = "JMBG / ЈМБГ")]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Key]
-        public long Id { get; set; }
+        public string Id { get; set; }
         // Ime
         [Required]
         [Display(Name = "Ime / Име")]

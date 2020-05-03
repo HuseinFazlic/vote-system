@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcVote.Data;
 using MvcVote.Models;
-
+/*
+ * This class was created by scaffolding (MVC Controller with views using Entity Framework)
+ */
 namespace MvcVote.Controllers
 {
     public class VotersController : Controller
@@ -26,7 +28,7 @@ namespace MvcVote.Controllers
         }
 
         // GET: Voters/Details/5
-        public async Task<IActionResult> Details(long? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -66,7 +68,7 @@ namespace MvcVote.Controllers
         }
 
         // GET: Voters/Edit/5
-        public async Task<IActionResult> Edit(long? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -86,7 +88,7 @@ namespace MvcVote.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,Name,Surname,Municipality,didVote")] Voter voter)
+        public async Task<IActionResult> Edit(string id, [Bind("Id,Name,Surname,Municipality,didVote")] Voter voter)
         {
             if (id != voter.Id)
             {
@@ -117,7 +119,7 @@ namespace MvcVote.Controllers
         }
 
         // GET: Voters/Delete/5
-        public async Task<IActionResult> Delete(long? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -137,7 +139,7 @@ namespace MvcVote.Controllers
         // POST: Voters/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(long id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var voter = await _context.Voter.FindAsync(id);
             _context.Voter.Remove(voter);
@@ -145,7 +147,7 @@ namespace MvcVote.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool VoterExists(long id)
+        private bool VoterExists(string id)
         {
             return _context.Voter.Any(e => e.Id == id);
         }

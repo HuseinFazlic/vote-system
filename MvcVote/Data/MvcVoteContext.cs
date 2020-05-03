@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MvcVote.Models;
-
+/*
+ * This class was written by Husein Fazlić
+ */
 namespace MvcVote.Data
 {
     public class MvcVoteContext : DbContext
@@ -16,5 +18,6 @@ namespace MvcVote.Data
 
         public DbSet<Voter> Voter { get; set; }
         public DbSet<Mayor> Mayor { get; set; }
+        public DbSet<Councillor> Councillor { get; set; }
     }
 }

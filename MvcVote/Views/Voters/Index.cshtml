@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<MvcVote.Models.Voter>
+<!-- Created by scaffolding -->
 
 @{
     ViewData["Title"] = "Index";
@@ -31,29 +32,30 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Municipality)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.didVote)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Uredi / Уреди</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalji / Детаљи</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Ukloni / Уклони</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Municipality)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.didVote)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Uredi / Уреди</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalji / Детаљи</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Ukloni / Уклони</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
