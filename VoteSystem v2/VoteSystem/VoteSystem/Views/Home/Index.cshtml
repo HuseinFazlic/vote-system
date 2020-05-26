@@ -1,0 +1,373 @@
+﻿@using VoteSystem.Models;
+@{
+    ViewBag.Title = "Home";
+    List<CandidateList> candidateLists = (List<CandidateList>)ViewData["NumberCandidateLists"];
+    List<CandidateListCandidate> candidateListCandidates = (List<CandidateListCandidate>)ViewData["CandidateListCandidate"];
+    List<Vote> Votes = (List<Vote>)ViewData["Vote"];
+    List<Person> Persons = (List<Person>)ViewData["Persons"];
+    int VotesCandidate = (int)ViewData["NumberVotes"];
+
+    string language = "";
+    if (Request.Cookies["language"] != null)
+    {
+        language = Request.Cookies["language"].Value;
+    }
+    int staristics = -1;
+    if (Request.Cookies["Statistics"] != null)
+    {
+        staristics = int.Parse(Request.Cookies["Statistics"].Value);
+    }
+
+    int CandidateId = -1;
+    if (Request.Cookies["CandidateIdForHome"] != null)
+    {
+        CandidateId = int.Parse(Request.Cookies["CandidateIdForHome"].Value);
+    }
+}
+
+
+@switch (language)
+{
+    case "ba":
+        <label>Broj stranki: @candidateLists.Count() </label>
+        break;
+    case "bac":
+        <label>Број кандидата: @candidateLists.Count() </label>
+        break;
+    case "en":
+        <label>Number of candidates: @candidateLists.Count() </label>
+        break;
+    default:
+        <label>Broj stranki: @candidateLists.Count() </label>
+        break;
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            @switch (language)
+            {
+                case "ba":
+                    <th>Ime</th>
+                    <th>Opis</th>
+                    <th>Logo</th>
+                    <th>Statistika</th>
+                    break;
+                case "bac":
+                    <th>Име</th>
+                    <th>Опис</th>
+                    <th>Лого</th>
+                    <th>Статистика</th>
+                    break;
+                case "en":
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Logo</th>
+                    <th>Statistics</th>
+                    break;
+                default:
+                    <th>Ime</th>
+                    <th>Opis</th>
+                    <th>Logo</th>
+                    <th>Statistika</th>
+                    break;
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in candidateLists)
+        {
+            <tr>
+                <td>@x.Name</td>
+                <td>@x.Description</td>
+                <td> <img src="@x.URLLogo" style="height: 100px;" /> </td>
+                <td>
+                    @switch (language)
+                    {
+                        case "ba":
+                            <a class="btn btn-default" href="~/Home/Statistics?id=@x.Id">Statistika</a>
+                            break;
+                        case "bac":
+                            <a class="btn btn-default" href="~/Home/Statistics?id=@x.Id">Статистика</a>
+                            break;
+                        case "en":
+                            <a class="btn btn-default" href="~/Home/Statistics?id=@x.Id">Statistics</a>
+                            break;
+                        default:
+                            <a class="btn btn-default" href="~/Home/Statistics?id=@x.Id">Statistika</a>
+                            break;
+                    }
+
+                    @{
+                        int suma = 0;
+                    }
+                    @foreach (var y in candidateListCandidates)
+                    {
+                        if (x.Id == y.CandidateListId)
+                        {
+                            foreach (var z in Votes)
+                            {
+                                if (y.Id == z.CandidateListCandidateMyId)
+                                {
+                                    suma += 1;
+                                }
+                            }
+                        }
+                    }
+                    @if (suma != 0)
+                    {
+                        int sumaAll = (suma / Votes.Count()) * 100;
+                        switch (language)
+                        {
+                            case "ba":
+                                <label>Glasova: @suma</label>
+                                <label>Prosjek: @sumaAll%</label>
+                                break;
+                            case "bac":
+                                <label>Гласова: @suma</label>
+                                <label>Просjек: @sumaAll%</label>
+                                break;
+                            case "en":
+                                <label>Votes: @suma</label>
+                                <label>Average: @sumaAll%</label>
+                                break;
+                            default:
+                                <label>Glasova: @suma</label>
+                                <label>Prosjek: @sumaAll%</label>
+                                break;
+                        }
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (staristics != -1)
+{
+    switch (language)
+    {
+        case "ba":
+            <label>Gradonačelnik</label>
+            break;
+        case "bac":
+            <label>Градоначелник</label>
+            break;
+        case "en":
+            <label>Mayor</label>
+            break;
+        default:
+            <label>Gradonačelnik</label>
+            break;
+    }
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                @switch (language)
+                {
+                    case "ba":
+                        <th>Gradonačelnik</th>
+                        <th>Statistika</th>
+                        break;
+                    case "bac":
+                        <th>Градоначелник</th>
+                        <th>Статистика</th>
+                        break;
+                    case "en":
+                        <th>Mayor</th>
+                        <th>Statistics</th>
+                        break;
+                    default:
+                        <th>Gradonačelnik</th>
+                        <th>Statistika</th>
+                        break;
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var x in candidateListCandidates)
+            {
+                if (x.Id == CandidateId)
+                {
+                    <tr style="background-color: aqua">
+                        @foreach (var x2 in Persons)
+                        {
+                            if (x.PersonId == x2.Id && x.Mayor == true)
+                            {
+                                <td>@x2.FirstName @x2.LastName</td>
+                                <td>
+                                    @switch (language)
+                                    {
+                                        case "ba":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                        case "bac":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Статистика Гласова</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                        case "en":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistics Votes</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                        default:
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika Glasova</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                    }
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        @foreach (var x2 in Persons)
+                        {
+                            if (x.PersonId == x2.Id && x.Mayor == true)
+                            {
+                                <td>@x2.FirstName @x2.LastName</td>
+                                <td>
+                                    @switch (language)
+                                    {
+                                        case "ba":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            break;
+                                        case "bac":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Статистика</a>
+                                            break;
+                                        case "en":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistics</a>
+                                            break;
+                                        default:
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            break;
+                                    }
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+
+
+
+
+
+    switch (language)
+    {
+        case "ba":
+            <label>Vijeće</label>
+            break;
+        case "bac":
+            <label>Вијеће</label>
+            break;
+        case "en":
+            <label>Council</label>
+            break;
+        default:
+            <label>Vijeće</label>
+            break;
+    }
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                @switch (language)
+                {
+                    case "ba":
+                        <th>Vijećnik</th>
+                        <th>Statistika</th>
+                        break;
+                    case "bac":
+                        <th>Вијећник</th>
+                        <th>Градоначелник</th>
+                        break;
+                    case "en":
+                        <th>Councilor</th>
+                        <th>Statistics</th>
+                        break;
+                    default:
+                        <th>Vijećnik</th>
+                        <th>Statistika</th>
+                        break;
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var x in candidateListCandidates)
+            {
+                if (x.Id == CandidateId)
+                {
+                    <tr style="background-color: aqua">
+                        @foreach (var x2 in Persons)
+                        {
+                            if (x.PersonId == x2.Id && x.Mayor == false)
+                            {
+                                <td>@x2.FirstName @x2.LastName</td>
+                                <td>
+                                    @switch (language)
+                                    {
+                                        case "ba":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                        case "bac":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Статистика</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                        case "en":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistics</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                        default:
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            <label>Glasova (@VotesCandidate)</label>
+                                            break;
+                                    }
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        @foreach (var x2 in Persons)
+                        {
+                            if (x.PersonId == x2.Id && x.Mayor == false)
+                            {
+                                <td>@x2.FirstName @x2.LastName</td>
+                                <td>
+                                    @switch (language)
+                                    {
+                                        case "ba":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            break;
+                                        case "bac":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Статистика</a>
+                                            break;
+                                        case "en":
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistics</a>
+                                            break;
+                                        default:
+                                            <a class="btn btn-default" href="~/Home/StatisticsCandidate?id=@x.Id">Statistika</a>
+                                            break;
+                                    }
+                                </td>
+                            }
+                        }
+                    </tr>
+                }
+
+            }
+        </tbody>
+    </table>
+}

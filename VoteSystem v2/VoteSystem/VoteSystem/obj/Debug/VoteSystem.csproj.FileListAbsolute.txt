@@ -1,0 +1,151 @@
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\VoteSystem.dll.config
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\VoteSystem.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\VoteSystem.pdb
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\csc.exe
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\csc.exe.config
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\csc.rsp
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\csi.exe
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\csi.exe.config
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\csi.rsp
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.AppContext.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Console.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.IO.Compression.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Net.Http.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.ValueTuple.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\vbc.exe
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\vbc.exe.config
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\vbc.rsp
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Helpers.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Mvc.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Razor.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Webpages.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Webpages.Razor.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Razor.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Webpages.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Webpages.Razor.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Helpers.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\System.Web.Mvc.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\obj\Debug\VoteSystem.csprojAssemblyReference.cache
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\obj\Debug\VoteSystem.csproj.CopyComplete
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\obj\Debug\VoteSystem.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\obj\Debug\VoteSystem.pdb
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\EntityFramework.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\EntityFramework.xml
+C:\Users\Smiljana\source\repos\VoteSystem\VoteSystem\bin\EntityFramework.SqlServer.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\VoteSystem.dll.config
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\VoteSystem.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\VoteSystem.pdb
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\csc.exe
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\csc.exe.config
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\csc.rsp
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\csi.exe
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\csi.exe.config
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\csi.rsp
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.Managed.Core.targets
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.AppContext.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Collections.Immutable.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Console.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Globalization.Calendars.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.IO.Compression.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.IO.FileSystem.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Net.Http.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Net.Sockets.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Reflection.Metadata.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.ValueTuple.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Xml.XmlDocument.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Xml.XPath.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\vbc.exe
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\vbc.exe.config
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\vbc.rsp
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\VBCSCompiler.exe
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\EntityFramework.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\EntityFramework.SqlServer.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\Microsoft.Web.Infrastructure.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Helpers.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Mvc.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Razor.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Webpages.Deployment.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Webpages.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Webpages.Razor.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\EntityFramework.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\EntityFramework.SqlServer.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Razor.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Webpages.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Webpages.Deployment.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Webpages.Razor.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Helpers.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\System.Web.Mvc.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\obj\Debug\VoteSystem.csprojAssemblyReference.cache
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\obj\Debug\VoteSystem.csproj.CoreCompileInputs.cache
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\obj\Debug\VoteSystem.csproj.CopyComplete
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\obj\Debug\VoteSystem.dll
+D:\niko\#3 novi\VoteSystem v2\VoteSystem\VoteSystem\obj\Debug\VoteSystem.pdb

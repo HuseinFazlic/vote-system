@@ -1,0 +1,159 @@
+﻿
+@{
+    ViewBag.Title = "Person";
+}
+@{
+    string language = "";
+    if (Request.Cookies["language"] != null)
+    {
+        language = Request.Cookies["language"].Value;
+    }
+}
+<br />
+<form class="form-horizontal" action="/Person/Save">
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>Ime: </label>
+                break;
+            case "bac":
+                <label>Име: </label>
+                break;
+            case "en":
+                <label>First name: </label>
+                break;
+            default:
+                <label>Ime: </label>
+                break;
+        }
+        <input type="text" class="form-control" name="FirstName" required>
+    </div>
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>Prezime: </label>
+                break;
+            case "bac":
+                <label>Презиме: </label>
+                break;
+            case "en":
+                <label>Last name: </label>
+                break;
+            default:
+                <label>Prezime: </label>
+                break;
+        }
+        <input type="text" class="form-control" name="LastName" required>
+    </div>
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>Mjesto rođenja: </label>
+                break;
+            case "bac":
+                <label>Мjесто рођења: </label>
+                break;
+            case "en":
+                <label>Place birth: </label>
+                break;
+            default:
+                <label>Mjesto rođenja: </label>
+                break;
+        }
+        <input type="text" class="form-control" name="PlaceBirth" required>
+    </div>
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>Spol: </label> <br>
+                <input type="radio" name="Gender" value="Male"> <label>Muški</label> <br>
+                <input type="radio" name="Gender" value="Female" checked> <label>Ženski</label> <br>
+                break;
+            case "bac":
+                <label>Спол: </label> <br>
+                <input type="radio" name="Gender" value="Male"> <label>Мушкo</label> <br>
+                <input type="radio" name="Gender" value="Female" checked> <label>Женско</label> <br>
+                break;
+            case "en":
+                <label>Gender: </label> <br>
+                <input type="radio" name="Gender" value="Male"> <label>Male</label> <br>
+                <input type="radio" name="Gender" value="Female" checked> <label>Female</label> <br>
+                break;
+            default:
+                <label>Spol: </label> <br>
+                <input type="radio" name="Gender" value="Male"> <label>Muški</label> <br>
+                <input type="radio" name="Gender" value="Female" checked> <label>Ženski</label> <br>
+                break;
+        }
+    </div>
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>Bračni status: </label> <br>
+                <input type="radio" name="Marttial" value="Married"> <label>Oženjen</label> <br>
+                <input type="radio" name="Marttial" value="Not married" checked> <label>Slobodan</label> <br>
+                break;
+            case "bac":
+                <label>Брачно стање: </label> <br>
+                <input type="radio" name="Marttial" value="Married"> <label>Oжењен</label> <br>
+                <input type="radio" name="Marttial" value="Not married" checked> <label>Cлободан</label> <br>
+                break;
+            case "en":
+                <label>Martial status: </label><br />
+                <input type="radio" name="Marttial" value="Married"> <label>Married</label> <br>
+                <input type="radio" name="Marttial" value="Not married" checked> <label>Not Married</label> <br>
+                break;
+            default:
+                <label>Bračni status: </label> <br>
+                <input type="radio" name="Marttial" value="Married"> <label>Oženjen</label> <br>
+                <input type="radio" name="Marttial" value="Not married" checked> <label>Slobodan</label> <br>
+                break;
+        }
+    </div>
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>Adresa: </label>
+                break;
+            case "bac":
+                <label>Адреса: </label>
+                break;
+            case "en":
+                <label>Address: </label>
+                break;
+            default:
+                <label>Adresa: </label>
+                break;
+        }
+        <input type="text" class="form-control" name="Address" required>
+    </div>
+  
+    <div class="form-group">
+        @switch (language)
+        {
+            case "ba":
+                <label>JMBG: </label>
+                break;
+            case "bac":
+                <label>ЈМБГ: </label>
+                break;
+            case "en":
+                <label>JMBG: </label>
+                break;
+            default:
+                <label>JMBG: </label>
+                break;
+        }
+        <input type="text" class="form-control" name="JMBG" min="1000000000000" max="9999999999999" required>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-success" type="submit" value="Next" />
+    </div>
+</form>
+
