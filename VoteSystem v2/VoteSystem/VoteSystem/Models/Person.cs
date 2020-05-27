@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,4 +21,4 @@ namespace VoteSystem.Models
         public bool? Mayor { get; set; }
         public bool? Council { get; set; }
     }
-}
+} 
