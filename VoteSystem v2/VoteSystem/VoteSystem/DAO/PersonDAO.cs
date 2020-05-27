@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,10 +21,6 @@ namespace VoteSystem.DAO
         {
             s.Person.Add(person);
             s.SaveChanges();
-        }
-        public List<Person> GetAllPersons()
-        {
-            return s.Person.ToList();
         }
     }
 }
