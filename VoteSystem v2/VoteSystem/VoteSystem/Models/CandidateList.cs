@@ -1,4 +1,5 @@
-﻿using System;
+@* The following code was written by Nejra Trle *@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
