@@ -49,6 +49,9 @@ namespace VoteSystem.Controllers
 
             return View();
         }
+        
+        // The following code was written by Faris Ćurevac
+        
         public ActionResult ChangeLanmguage(string id)
         {
             HttpCookie cookie;
