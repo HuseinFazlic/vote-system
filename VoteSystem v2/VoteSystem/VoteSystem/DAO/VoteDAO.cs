@@ -1,4 +1,5 @@
-﻿using System;
+﻿//The following code was written by Almina Rascic//
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -74,10 +75,6 @@ namespace VoteSystem.DAO
         public List<Vote> GetVotesByPersonId(int id)
         {
             return s.Vote.Where(x=>x.PersonId==id).ToList();
-        }
-        public List<Vote> GetVotesByCandidateId(int id)
-        {
-            return s.Vote.Where(x => x.CandidateListCandidateMyId == id).ToList();
         }
     }
 }
