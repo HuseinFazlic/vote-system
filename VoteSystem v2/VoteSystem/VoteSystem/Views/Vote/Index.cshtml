@@ -1,0 +1,260 @@
+@* The following code was written by Faris Ćurevac *@
+
+@using VoteSystem.Models;
+@{
+    ViewBag.Title = "Vote";
+    string error = (string)ViewData["Error"];
+    List<CandidateList> candidateLists = (List<CandidateList>)ViewData["CandidateList"];
+    List<Person> candidates = (List<Person>)ViewData["Candidates"];
+    int SelectGroup = -1;
+    if (Request.Cookies["SelectedGrpup"] != null)
+    {
+        SelectGroup = Int32.Parse(Request.Cookies["SelectedGrpup"].Value);
+    }
+}
+@{
+    string language = "";
+    if (Request.Cookies["language"] != null)
+    {
+        language = Request.Cookies["language"].Value;
+    }
+}
+
+@switch (language)
+{
+    case "ba":
+        <h2>Stranke</h2>
+        break;
+    case "bac":
+        <h2>Cтранка</h2>
+        break;
+    case "en":
+        <h2>Political organizations</h2>
+        break;
+    default:
+        <h2>Stranke</h2>
+        break;
+}
+
+@if (error == "True")
+{
+    switch (language)
+    {
+        case "ba":
+            <h2>Glasanje je uspešno.</h2>
+            break;
+        case "bac":
+            <h2>Гласање је успешно.</h2>
+            break;
+        case "en":
+            <h2>Success vote.</h2>
+            break;
+        default:
+            <h2>Glasanje je uspešno.</h2>
+            break;
+    }
+}
+@if (error == "False")
+{
+    switch (language)
+    {
+        case "ba":
+            <h2>Glasanje je pogrešno.</h2>
+            break;
+        case "bac":
+            <h2>Гласање је погрешно.</h2>
+            break;
+        case "en":
+            <h2>Voting is wrong.</h2>
+            break;
+        default:
+            <h2>Glasanje je pogrešno.</h2>
+            break;
+    }
+}
+@try
+{
+    if (error.Count() > 7)
+    {
+        <h2>@error</h2>
+    }
+}
+catch (Exception)
+{
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            @switch (language)
+            {
+                case "ba":
+                    <th>Ime</th>
+                    <th>Opis</th>
+                    <th>Slika</th>
+                    <th>Opcija</th>
+                    break;
+                case "bac":
+                    <th>Име</th>
+                    <th>Опис</th>
+                    <th>Слика</th>
+                    <th>Опција</th>
+                    break;
+                case "en":
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Option</th>
+                    break;
+                default:
+                    <th>Ime</th>
+                    <th>Opis</th>
+                    <th>Slika</th>
+                    <th>Opcija</th>
+                    break;
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in candidateLists)
+        {
+            if (x.Id == SelectGroup)
+            {
+                <tr style="background-color: aqua">
+                    <td>@x.Name</td>
+                    <td>@x.Description</td>
+                    <td> <img src="@x.URLLogo" style="height: 100px;" /> </td>
+                    @switch (language)
+                    {
+                        case "ba":
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Odaberi</a> </td>
+                            break;
+                        case "bac":
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Изаберите</a> </td>
+                            break;
+                        case "en":
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Select</a> </td>
+                            break;
+                        default:
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Odaberi</a> </td>
+                            break;
+                    }
+
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>@x.Name</td>
+                    <td>@x.Description</td>
+                    <td> <img src="@x.URLLogo" style="height: 100px;" /> </td>
+                    @switch (language)
+                    {
+                        case "ba":
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Odaberi</a> </td>
+                            break;
+                        case "bac":
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Изаберите</a> </td>
+                            break;
+                        case "en":
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Select</a> </td>
+                            break;
+                        default:
+                            <td> <a class="btn btn-success" href="~/Vote/SelectGroup?Id=@x.Id">Odaberi</a> </td>
+                            break;
+                    }
+
+                </tr>
+            }
+
+        }
+
+    </tbody>
+</table>
+
+
+@if (candidates != null)
+{
+    switch (language)
+    {
+        case "ba":
+            <label>Gradonačelnici</label>
+            break;
+        case "bac":
+            <label>Градоначелници</label>
+            break;
+        case "en":
+            <label>Mayors</label>
+            break;
+        default:
+            <label>Gradonačelnici</label>
+            break;
+    }
+
+    <br />
+    <table class="table table-bordered">
+        <tbody>
+            @foreach (var x in candidates)
+            {
+                if (x.Mayor == true)
+                {
+                    <tr>
+                        <td>@x.FirstName @x.LastName</td>
+                        <td> <a class="btn btn-danger" href="~/Vote/Vote?id=@x.Id&Type=Mayors">Vote</a> </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+
+    <br />
+    switch (language)
+    {
+        case "ba":
+            <label>Vijeće</label>
+            break;
+        case "bac":
+            <label>Вијеће</label>
+            break;
+        case "en":
+            <label>Council</label>
+            break;
+        default:
+            <label>Vijeće</label>
+            break;
+    }
+
+    <br />
+    <table class="table table-bordered">
+        <tbody>
+            @foreach (var x in candidates)
+            {
+                if (x.Council == true)
+                {
+                    <tr>
+                        <td>@x.FirstName @x.LastName</td>
+                        <td> <a class="btn btn-danger" href="~/Vote/Vote?id=@x.Id&Type=Council">Vote</a> </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+}
+
+@switch (language)
+{
+    case "ba":
+        <a class="btn btn-danger" href="~/Vote/End">Završi</a>
+        break;
+    case "bac":
+        <a class="btn btn-danger" href="~/Vote/End">Заврши</a>
+        break;
+    case "en":
+        <a class="btn btn-danger" href="~/Vote/End">Finish</a>
+        break;
+    default:
+        <a class="btn btn-danger" href="~/Vote/End">Završi</a>
+        break;
+}
