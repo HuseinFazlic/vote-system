@@ -1,4 +1,4 @@
-@* The following code was written by Nejra Trle *@
+// The following code was written by Nejra Trle 
 using System;
 using System.Collections.Generic;
 using System.Linq;
